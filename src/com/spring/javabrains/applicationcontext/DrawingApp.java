@@ -8,7 +8,7 @@ public class DrawingApp {
 
 	public static void main(String[] args){
 
-		ApplicationContext applicationContext1 = new ClassPathXmlApplicationContext("spring1.xml");
+/*		ApplicationContext applicationContext1 = new ClassPathXmlApplicationContext("spring1.xml");
 		Triangle1 triangle1 = (Triangle1) applicationContext1.getBean("triangle1");
 		triangle1.draw();
 		//  /SpringTutorial/src/com/spring/javabrains/applicationcontext/spring.xml
@@ -23,7 +23,11 @@ public class DrawingApp {
 		ApplicationContext applicationContext3 = new ClassPathXmlApplicationContext("spring3.xml");
 		Triangle3 triangle3 = (Triangle3) applicationContext3.getBean("triangle3");
 		triangle3.draw();
+*/
 
+		ApplicationContext applicationContext4 = new ClassPathXmlApplicationContext("circle1.xml");
+		Circle1 circle1 = (Circle1) applicationContext4.getBean("circle1");
+		circle1.draw();
 
 	}
 
